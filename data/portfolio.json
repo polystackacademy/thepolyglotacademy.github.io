@@ -1,0 +1,180 @@
+{
+    "ProfessionalExperience": {
+        "Id": 1,
+        "Skills": [
+            "FONT-END DEVELOPER",
+            "DATA ANALYSIS",
+            "BACK-END DEVELOPMENT"
+        ],
+        "JobProfile": "Software Developer",
+        "JobDescription": "I've held three different positions in these companies. From designing content for digital signage and developing JQuery plugins as Front-End Developer I have learned my way up to Software Development in dotNet, Python and C++ as Back-End Developer. I am responsible for migrating and analysing high quality of data. I had played a major role in setting up the Software Architecture for scalable web applications.",
+        "Organizations": [
+            {
+                "Id": 1,
+                "Name": "TMotions Global Pvt. Ltd.",
+                "OrganizationUrl": "https://www.tmotions.com/",
+                "OrganizationImageUrl": "./img/Tmotions_Profile.jpg",
+                "Location": "Mohali, Chandigarh, India 160062",
+                "PeriodFrom": "November 2017",
+                "PeriodTo": "",
+                "IsPresent": true,
+                "Description": "",
+                "Role": "Software Developer",
+                "Keywords": [
+                    "Software Developer"
+                ]
+            },
+            {
+                "Id": 2,
+                "Name": "Techbit Solutions Pvt. Ltd.",
+                "OrganizationUrl": "http://www.techbitsolution.com/",
+                "OrganizationImageUrl": "./img/Techbit_Profile.jpg",
+                "Location": "Mohali, Chandigarh, India 160062",
+                "PeriodFrom": "October 2016",
+                "PeriodTo": "November 2017",
+                "IsPresent": false,
+                "Description": "",
+                "Role": "Software Developer",
+                "Keywords": [
+                    "Software Developer"
+                ]
+            },
+            {
+                "Id": 3,
+                "Name": "Ashtbit Technologies PVT. LTD.",
+                "OrganizationUrl": "http://www.ashtbit.com/",
+                "OrganizationImageUrl": "./img/Ashtbit_Profile.jpg",
+                "Location": "Lucknow, Uttar Pradesh, India 160062",
+                "PeriodFrom": "September 2015",
+                "PeriodTo": "September 2016",
+                "IsPresent": false,
+                "Description": "",
+                "Role": "Jr. Software Developer",
+                "Keywords": [
+                    "Software Developer"
+                ]
+            }
+        ]
+    },
+    "PersonalProjects": {
+        "Id": 1,
+        "ProfileTitle": "Personal Projects",
+        "ProfileDescription": "My passion of coding lands me to the new boundary of exploring things that are new or not yet touched. I’m keen in exploring my skills and adding new skills. I like solving challenges and creating its solutions based on that. I would love to hear from you if you are looking for someone to solve your programming problem. Follow me on <b>Github</b> or mail me on <b>abhinav.social58@gmail.com</b>.",
+        "Skills": [
+            "Python",
+            "Javascript",
+            "typescript",
+            "c++"
+        ],
+        "Projects": [
+            {
+                "Id": 1,
+                "Title": "Design Patterns",
+                "SourceType": "Github:abhinav2127",
+                "SourceUrl": "https://github.com/abhinav2127/DesignPattern_CSharp",
+                "ReadMeUrl": "https://github.com/abhinav2127/DesignPattern_CSharp/blob/master/README.md",
+                "ImageUrl":"./img/Github_DesignPatterns.jpg",
+                "PeriodFrom": "January 28, 2019",
+                "PeriodTo": "",
+                "IsPresent": true,
+                "IsPopular": true,
+                "Roles": [
+                    "Software Engineering"
+                ],
+                "Keywords": [
+                    "SoftwareEngineering",
+                    "CleanCode",
+                    "DesignPatterns"
+                ]
+            },
+            {
+                "Id": 2,
+                "Title": "Flask Application",
+                "SourceType": "Github:abhinav2127",
+                "SourceUrl": "https://github.com/abhinav2127/SampleFlaskApplication",
+                "ReadMeUrl": "https://github.com/abhinav2127/SampleFlaskApplication/blob/master/README.md",
+                "ImageUrl":"./img/Github_Flask_WebApp.jpg",
+                "PeriodFrom": "Nov 19, 2018",
+                "PeriodTo": "",
+                "IsPresent": true,
+                "IsPopular": true,
+                "Roles": [
+                    "Application Development"
+                ],
+                "Keywords": [
+                    "PythonWebApplication",
+                    "FlaskApplication",
+                    "MVCApplication"
+                ]
+            },
+            {
+                "Id": 3,
+                "Title": "Map Notification",
+                "SourceType": "Github:abhinav2127",
+                "SourceUrl": "https://github.com/abhinav2127/MapNotificationModule",
+                "ReadMeUrl": "https://abhinav2127.github.io/MapNotificationModule/",
+                "ImageUrl":"./img/Github_MapNotification.jpg",
+                "PeriodFrom": "Jan 8, 2019",
+                "PeriodTo": "",
+                "IsPresent": false,
+                "IsPopular": true,
+                "Roles": [
+                    "Software Engineering"
+                ],
+                "Keywords": [
+                    "SignalRApplication",
+                    "MapNotification",
+                    "C#"
+                ]
+            },
+            {
+                "Id": 4,
+                "Title": "Project Onion",
+                "SourceType": "Github:abhinav2127",
+                "SourceUrl": "https://github.com/abhinav2127/ProjectOnion",
+                "ReadMeUrl": "https://github.com/abhinav2127/ProjectOnion/blob/master/README.md",
+                "ImageUrl":"./img/Github_ProjectOnion.jpg",
+                "PeriodFrom": "Mar 9, 2018",
+                "PeriodTo": "May 12, 2018",
+                "IsPresent": false,
+                "IsPopular": true,
+                "Roles": [
+                    "Plugin Development"
+                ],
+                "Keywords": [
+                    "SoftwareEngineering",
+                    "CleanCode",
+                    "C#",
+                    "LooselyCoupled",
+                    "ProjectArchitecture"
+                ]
+            }
+        ]
+    },
+    "InternshipProgram": [
+        {
+            "Id": 1,
+            "Title": "M101N & M103 MongoDB .Net Driver and Cluster Administration",
+            "CourseType": "Course",
+            "CourseDescription": "University of MongoDB is online mongo course certification platform which helped me to improve my non-sql database(MongoDB) development knowledge based on .Net Driver. I have learned concepts related to Replica-set, Cluster and Sharded Clusters which help me to scale MongoDB for large scale application.",
+            "CourseOrganization": "MongoDB University",
+            "CertificationLink": "https://university.mongodb.com/dashboard/completed",
+            "PeriodFrom": "Sep 25, 2018 ",
+            "PeriodTo": "Dec 25 2018",
+            "IsPresent": false,
+            "Skills": [
+                "dotNet MongoDB Driver",
+                "Replica Set",
+                "Clusters",
+                "Sharded Clusters"
+            ],
+            "Roles": [
+                "MongoDB dotNet Developer"
+            ],
+            "Keywords": [
+                "MongoDB",
+                "Developer"
+            ]
+        }
+    ]
+}
