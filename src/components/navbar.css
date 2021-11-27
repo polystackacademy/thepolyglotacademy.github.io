@@ -1,0 +1,24 @@
+.app-navbar {
+    padding: 1.5rem 0 1rem 0;
+}
+.app-navbar .app-navbar-brand {
+    display: flex;
+    flex-direction: row;
+}
+.app-navbar .app-navbar-brand .vr {
+    margin: 0px 20px 0px 10px;
+    width: 2px;
+    background-color: var(--bs-dark);
+}
+
+.app-navbar .app-navbar-brand button {
+    font-size: 1.2rem;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.navbar-popover, .navbar-popover-body {
+    max-width: max-content;
+}
+.app-courses-dropdown{
+    width: 40vw;
+}
