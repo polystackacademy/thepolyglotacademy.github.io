@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './shared/polyweb.css';
 import PolyWeb from './pages/polyweb';
+import './i18n';
 
 ReactDOM.render(
   <React.StrictMode>
-    <PolyWeb />
+    <Suspense fallback="">
+      <PolyWeb />
+    </Suspense>
   </React.StrictMode>,
   document.getElementById('root')
 );
