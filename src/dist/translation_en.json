@@ -1,3 +1,9 @@
 {
-    "PA_Enterprise_Btn_Label": "Enterprise"
+    "pa_enterprise_btn_label": "Enterprise",
+    "pa_section1_title": "Build your business, hobby or career.",
+    "pa_section1_subtitle": "Online certified courses with in-depth and practical lessons in over 100 subjects. Sign up for free, and reveal the MORE in you!",
+    "pa_try_free_btn_label": "Try For Free",
+    "pa_browse_courses_label": "Browse Courses",
+    "pa_try_3Month_btn_label": "Free 3 Month Trial",
+    "pa_login_btn_label": "Login"
 }

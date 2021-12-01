@@ -1,3 +1,9 @@
 {
-    "PA_Enterprise_Btn_Label": "उद्यम"
+    "pa_enterprise_btn_label": "उद्यम",
+    "pa_section1_title": "अपना व्यवसाय, शौक या करियर बनाएं।",
+    "pa_section1_subtitle": "100 से अधिक विषयों में गहन और व्यावहारिक पाठों के साथ ऑनलाइन प्रमाणित पाठ्यक्रम। मुफ्त में साइन अप करें, और आप में और अधिक प्रकट करें!",
+    "pa_try_free_btn_label": "मुफ्त में आजमाइये",
+    "pa_browse_courses_label": "पाठ्यक्रम ब्राउज़ करें",
+    "pa_try_3Month_btn_label": "मुफ़्त 3 महीने का परीक्षण",
+    "pa_login_btn_label": "लॉग इन करें"
 }

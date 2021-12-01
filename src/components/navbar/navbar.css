@@ -22,3 +22,6 @@
 .app-courses-dropdown{
     width: 40vw;
 }
+.app-navbar-lang-dropdown {
+    padding-top: 0.3rem;
+}

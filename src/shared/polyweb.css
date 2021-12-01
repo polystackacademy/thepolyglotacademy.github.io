@@ -1,0 +1,28 @@
+body{
+    font-family: Poppins,sans-serif;
+}
+
+.container-section1 {
+    height: 30rem
+}
+.container-section1 .heading {
+    padding: 8rem 3rem 0rem 3rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.container-section1 .message {
+    font-size: 1.1rem;
+    padding: 0 0px 0 3rem;
+}
+.container-section1 .try-button {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.container-section1 .intro-video {
+    padding: 4.25rem;
+    background-color: #fff;
+    max-width: 100%;
+    height: auto;
+}

@@ -1,8 +1,8 @@
 import { Container, Navbar, NavDropdown, NavLink, OverlayTrigger, Popover } from "react-bootstrap";
-import "./navbar.css";
+import "./navbar/navbar.css";
 import logo from "../shared/images/logo.png";
 import Button from "@restart/ui/esm/Button";
-import CoursesNavbar from "./courses-navbar";
+import CoursesNavbar from "./navbar/courses-navbar";
 import { useTranslation } from 'react-i18next';
 import { PaLanguageSupport } from '../shared/constants';
 
@@ -21,8 +21,8 @@ function AppNavbar() {
                         />
                     </Navbar.Brand>
                     <div className="vr"></div>
-                    <Button className="btn btn-primary rounded-pill">{t('PA_Enterprise_Btn_Label')}</Button>
-                    <NavDropdown title={PaLanguageSupport[i18n.language]?.langKey}>
+                    <Button className="btn btn-primary rounded-pill">{t('pa_enterprise_btn_label')}</Button>
+                    <NavDropdown className="app-navbar-lang-dropdown" title={PaLanguageSupport[i18n.language]?.langKey}>
                         {Object.keys(PaLanguageSupport).map((lng) => (
                             <NavDropdown.Item key={lng} onClick={() => i18n.changeLanguage(lng)}>
                                 {PaLanguageSupport[lng].langKey}</NavDropdown.Item>
@@ -42,10 +42,10 @@ function AppNavbar() {
                             </Popover>
                         }
                     >
-                        <NavLink>Browse Courses</NavLink>
+                        <NavLink>{t('pa_browse_courses_label')}</NavLink>
                     </OverlayTrigger>
-                    <Button className="btn btn-primary rounded-pill me-2">Free 3 Month Trial</Button>
-                    <NavLink>Login</NavLink>
+                    <Button className="btn btn-primary rounded-pill me-2">{t('pa_try_3Month_btn_label')}</Button>
+                    <NavLink>{t('pa_login_btn_label')}</NavLink>
                 </div>
             </Container>
         </Navbar>
