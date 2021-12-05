@@ -1,7 +1,7 @@
 import { Col, Container, Row, Button } from "react-bootstrap";
 import { useTranslation } from 'react-i18next';
 
-export default function Section1Page() {
+export default function IntroSection() {
     const { t, i18n } = useTranslation();
     const filePath = "/images/intro-" + i18n.language + ".gif";
     return (
@@ -18,7 +18,7 @@ export default function Section1Page() {
                         <Button className="rounded-pill align-self-center btn-lg try-button">{t('pa_try_free_btn_label')}</Button>
                     </div>
                 </Col>
-                <Col>
+                <Col className="text-center">
                     <img
                         src={filePath}
                         className="intro-video"

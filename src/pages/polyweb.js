@@ -1,11 +1,15 @@
-import Section1Page from "../components/core/section-page1";
+import CoursesSection from "../components/core/courses-section";
+import IntroSection from "../components/core/intro-section";
 import AppNavbar from "../components/navbar";
+import { COURSES } from "../shared/services/dummyData/data";
 
 function PolyWeb() {
+  console.log(COURSES);
   return (
     <>
       <AppNavbar />
-      <Section1Page />
+      <IntroSection />
+      <CoursesSection courses={COURSES} />
     </>
   );
 }

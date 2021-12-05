@@ -1,9 +1,8 @@
 body{
     font-family: Poppins,sans-serif;
 }
-
-.container-section1 {
-    height: 30rem
+.bg-alternate-section {
+    background-color: var(--bs-gray-100);
 }
 .container-section1 .heading {
     padding: 8rem 3rem 0rem 3rem;
@@ -21,8 +20,51 @@ body{
     padding-bottom: .5rem;
 }
 .container-section1 .intro-video {
-    padding: 4.25rem;
+    padding: 0.25rem;
     background-color: #fff;
     max-width: 100%;
     height: auto;
+    width: 80%;
+}
+.course-image {
+    width: 100%;
+    position: relative;
+}
+.course-image img {
+    width: 100%;
+}
+.course-watermarks{
+    position: absolute;
+}
+.course-watermarks.most-rated-title {
+    color: yellow;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.2);
+    margin: 2px;
+}
+.course-watermarks.ref-links {
+    bottom: 0;
+    right: 0;
+    color: white;
+}
+.course-watermarks.ref-links button {
+    all: unset;
+    margin-right: 5px;
+    cursor: pointer;
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.2);
+    margin-bottom: 2px;
+    font-size: 1.2rem;
+}
+span.most-viewed{
+    padding-left: 5px;
+}
+.course-stats{
+        color: rgba(0,0,0,0.4);
+        font-size: 0.95rem;
+        margin-bottom: 10px;
 }
