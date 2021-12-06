@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar, faGraduationCap, faUser, faClock, faBookReader } from '@fortawesome/free-solid-svg-icons';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import Button from "@restart/ui/esm/Button";
+import { FormattedNumber, FormattedPlural } from "react-intl";
 
 function CoursesSection(props) {
     const { courses } = props;
@@ -48,7 +49,8 @@ function CoursesSection(props) {
                                                                 v.numberOfStudents > 0 ?
                                                                     <Col md={6} className="text-truncate small">
                                                                         <FontAwesomeIcon icon={faUser} /> &nbsp;
-                                                                        {v.numberOfStudents}&nbsp;Graduates
+                                                                        <FormattedNumber value={v.numberOfStudents} />&nbsp;
+                                                                        Graduates
                                                                     </Col>
                                                                     : null
                                                             }
@@ -64,7 +66,8 @@ function CoursesSection(props) {
                                                                 v.numberOfCourses > 0 ?
                                                                     <Col md={6} className="text-truncate small">
                                                                         <FontAwesomeIcon icon={faBookReader} /> &nbsp;
-                                                                        {v.numberOfCourses}&nbsp;Course{v.numberOfCourses > 1 ? 's' : ''}
+                                                                        <FormattedNumber value={v.numberOfCourses} />&nbsp;
+                                                                        <FormattedPlural value={v.numberOfCourses} one="Course" other="Courses" />
                                                                     </Col>
                                                                     : null
                                                             }

@@ -5,11 +5,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './shared/polyweb.css';
 import PolyWeb from './pages/polyweb';
 import './i18n';
+import { IntlProvider } from 'react-intl';
 
 ReactDOM.render(
   <React.StrictMode>
     <Suspense fallback="">
-      <PolyWeb />
+      <IntlProvider locale={navigator.language}>
+        <PolyWeb />
+      </IntlProvider>
     </Suspense>
   </React.StrictMode>,
   document.getElementById('root')
