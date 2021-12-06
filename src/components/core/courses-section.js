@@ -22,7 +22,7 @@ function CoursesSection(props) {
                                     return (
                                         <Col key={i} xs={12} md={4} sm={2}>
                                             <div className="p-md-5">
-                                                <Card>
+                                                <Card style={{ maxWidth: '16rem', left: '50%', transform: 'translateX(-50%)' }}>
                                                     <div className="course-image">
                                                         <Card.Img variant="left" src={v.imageUrl} />
                                                         {
@@ -46,7 +46,7 @@ function CoursesSection(props) {
                                                         <Row className="course-stats">
                                                             {
                                                                 v.numberOfStudents > 0 ?
-                                                                    <Col md={6}>
+                                                                    <Col md={6} className="text-truncate small">
                                                                         <FontAwesomeIcon icon={faUser} /> &nbsp;
                                                                         {v.numberOfStudents}&nbsp;Graduates
                                                                     </Col>
@@ -54,7 +54,7 @@ function CoursesSection(props) {
                                                             }
                                                             {
                                                                 v.courseDuration > 0 && v.courseDurationType ?
-                                                                    <Col md={6}>
+                                                                    <Col md={6} className="text-truncate small">
                                                                         <FontAwesomeIcon icon={faClock} /> &nbsp;
                                                                         {v.courseDuration}&nbsp;{v.courseDurationType}
                                                                     </Col>
@@ -62,7 +62,7 @@ function CoursesSection(props) {
                                                             }
                                                             {
                                                                 v.numberOfCourses > 0 ?
-                                                                    <Col md={6}>
+                                                                    <Col md={6} className="text-truncate small">
                                                                         <FontAwesomeIcon icon={faBookReader} /> &nbsp;
                                                                         {v.numberOfCourses}&nbsp;Course{v.numberOfCourses > 1 ? 's' : ''}
                                                                     </Col>
@@ -70,7 +70,7 @@ function CoursesSection(props) {
                                                             }
                                                             {
                                                                 v.reviewAvg > 0 ?
-                                                                    <Col md={6} onClick={() => console.log("Open Course Page")}>
+                                                                    <Col md={6} className="text-truncate small" onClick={() => console.log("Open Course Page")}>
                                                                         <FontAwesomeIcon icon={faStar} /> &nbsp;
                                                                         {v.reviewAvg}
                                                                     </Col>
@@ -89,6 +89,13 @@ function CoursesSection(props) {
                                     );
                                 })
                             }
+                        </Row>
+                        <Row>
+                            <Col className="text-center">
+                                <Button className="btn btn-primary btn-lg rounded-pill">
+                                    View All Courses
+                                </Button>
+                            </Col>
                         </Row>
                     </Container>
                 </Row>
