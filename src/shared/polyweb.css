@@ -68,3 +68,21 @@ span.most-viewed{
         font-size: 0.95rem;
         margin-bottom: 10px;
 }
+.how-it-works-container {
+    position: relative;
+}
+.how-it-works-container .container-header {
+    position: absolute;
+    top: 3rem;
+}
+.how-it-works-container img {
+    width: 100%;
+}
+.how-it-works-container button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
