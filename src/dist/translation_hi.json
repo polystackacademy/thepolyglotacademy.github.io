@@ -6,5 +6,8 @@
     "pa_browse_courses_label": "पाठ्यक्रम ब्राउज़ करें",
     "pa_try_3Month_btn_label": "मुफ़्त 3 महीने का परीक्षण",
     "pa_login_btn_label": "लॉग इन करें",
-    "pa_how_it_works_label": "यह काम किस प्रकार करता है।"
+    "pa_how_it_works_label": "यह काम किस प्रकार करता है।",
+    "pa_our_members_love_label": "हमारे सदस्य हमसे प्यार करते हैं।",
+    "pa_browser_support_error_message": "आपका ब्राउज़र में वीडियो टैग समर्थित नहीं है।",
+    "pa_read_more_label": "अधिक पढ़ें"
 }

@@ -6,5 +6,8 @@
     "pa_browse_courses_label": "Browse Courses",
     "pa_try_3Month_btn_label": "Free 3 Month Trial",
     "pa_login_btn_label": "Login",
-    "pa_how_it_works_label": "How It Works"
+    "pa_how_it_works_label": "How It Works",
+    "pa_our_members_love_label": "Our Members Love Us",
+    "pa_browser_support_error_message": "Your browser does not support the video tag.",
+    "pa_read_more_label": "Read More"
 }

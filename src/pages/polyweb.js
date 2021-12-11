@@ -1,8 +1,9 @@
 import CoursesSection from "../components/core/courses-section";
 import HowItWorksSection from "../components/core/how-it-works-section";
 import IntroSection from "../components/core/intro-section";
+import TestimonySection from "../components/core/testimony-section";
 import AppNavbar from "../components/navbar";
-import { COURSES } from "../shared/services/dummyData/data";
+import { COURSES, MEMBERSTORIES } from "../shared/services/dummyData/data";
 
 function PolyWeb() {
   console.log(COURSES);
@@ -11,7 +12,8 @@ function PolyWeb() {
       <AppNavbar />
       <IntroSection />
       <CoursesSection courses={COURSES} />
-      <HowItWorksSection />
+      <HowItWorksSection tryForFreeUrl={"http://www.google.com/"} />
+      <TestimonySection testimonies={MEMBERSTORIES} />
     </>
   );
 }
