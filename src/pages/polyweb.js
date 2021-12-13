@@ -1,6 +1,7 @@
 import CoursesSection from "../components/core/courses-section";
 import HowItWorksSection from "../components/core/how-it-works-section";
 import IntroSection from "../components/core/intro-section";
+import SubscriptionSection from "../components/core/subscriptions/subscription-section";
 import TestimonySection from "../components/core/testimony-section";
 import AppNavbar from "../components/navbar";
 import { COURSES, MEMBERSTORIES } from "../shared/services/dummyData/data";
@@ -14,6 +15,7 @@ function PolyWeb() {
       <CoursesSection courses={COURSES} />
       <HowItWorksSection tryForFreeUrl={"http://www.google.com/"} />
       <TestimonySection testimonies={MEMBERSTORIES} />
+      <SubscriptionSection />
     </>
   );
 }

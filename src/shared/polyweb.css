@@ -86,3 +86,18 @@ span.most-viewed{
     padding-left: 3rem;
     padding-right: 3rem;
 }
+.web-subscription-section {
+    width: 100%;
+    background-color: #f3f0f8;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    padding: 30px;
+}
+.web-subscription-section img {
+    width: 12rem;
+    filter: drop-shadow(1px 1px 1px #8a5dd2);
+}
