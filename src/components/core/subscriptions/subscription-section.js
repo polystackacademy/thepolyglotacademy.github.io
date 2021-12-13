@@ -11,7 +11,7 @@ function SubscriptionSection(props) {
         <Container fluid="sm">
             <Row>
                 <Col md={12}>
-                    <div className="web-subscription-section" style={{ backgroundImage: 'url(' + backgroundWatermarkPath + ')' }}>
+                    <div className="web-subscription-section mt-3" style={{ backgroundImage: 'url(' + backgroundWatermarkPath + ')' }}>
                         <Row>
                             <Col md={3}>
                                 <img src={pwLogo} />
