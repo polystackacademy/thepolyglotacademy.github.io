@@ -100,3 +100,15 @@ span.most-viewed{
     width: 12rem;
     filter: drop-shadow(1px 1px 1px #8a5dd2);
 }
+.app-footer-container a,.app-footer-container .btn {
+    text-decoration: none;
+    color: darkgray;
+    font-weight: 500;
+}
+.app-footer-container .active {
+    color: black;
+}
+.app-footer-container a:focus,.app-footer-container .btn:focus{
+    outline: 0;
+    box-shadow: none;
+}

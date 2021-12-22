@@ -27,7 +27,7 @@ function TestimonySection(props) {
                                         <Carousel.Item key={idx}>
                                             <div className="row g-0 bg-light position-relative">
                                                 <div className="col-md-4 offset-1 mb-md-0 p-md-4">
-                                                    <video controls width="100%" autoPlay={true}>
+                                                    <video controls width="100%" autoPlay={false}>
                                                         <source src={v.mediaUrl} type="video/mp4" />
                                                         <source src={v.mediaUrl} type="video/ogg" />
                                                         {t("pa_browser_support_error_message")}

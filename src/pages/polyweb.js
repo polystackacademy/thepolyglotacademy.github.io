@@ -1,4 +1,5 @@
 import AnyOneCanCodeSection from "../components/core/any-one-can-code-section";
+import AppFooterSection from "../components/core/app-footer-section";
 import CoursesSection from "../components/core/courses-section";
 import HowItWorksSection from "../components/core/how-it-works-section";
 import IntroSection from "../components/core/intro-section";
@@ -18,6 +19,7 @@ function PolyWeb() {
       <TestimonySection testimonies={MEMBERSTORIES} />
       <AnyOneCanCodeSection redirectUrl="http://www.google.com/" />
       <SubscriptionSection />
+      <AppFooterSection />
     </>
   );
 }
