@@ -1,6 +1,5 @@
 import { Container, Navbar, NavDropdown, NavLink, OverlayTrigger, Popover } from "react-bootstrap";
 import "./navbar/navbar.css";
-import logo from "../shared/images/logo.png";
 import Button from "@restart/ui/esm/Button";
 import CoursesNavbar from "./navbar/courses-navbar";
 import { useTranslation } from 'react-i18next';
@@ -8,13 +7,14 @@ import { PaLanguageSupport } from '../shared/constants';
 
 function AppNavbar() {
     const { t, i18n } = useTranslation();
+    const logoPath = "/images/logo.png";
     return (
         <Navbar expand="lg" className="app-navbar">
             <Container fluid="sm">
                 <div className="app-navbar-brand">
                     <Navbar.Brand>
                         <img
-                            src={logo}
+                            src={logoPath}
                             width="150rem"
                             className="d-inline-block align-top"
                             alt="The Polyglot Academy"
