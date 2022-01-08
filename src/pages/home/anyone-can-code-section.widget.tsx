@@ -1,11 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import { useTranslation } from 'react-i18next';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 
-function AnyOneCanCodeSection(props) {
+function AnyoneCanCodeSectionWidget(props: any) {
     const { t, i18n } = useTranslation();
-    const { redirectUrl } = props;
     const filePath = "/images/any-one-code-" + i18n.language + ".png";
     return (
         <Container>
@@ -15,7 +12,7 @@ function AnyOneCanCodeSection(props) {
                         src={filePath}
                         alt={t('pa_how_it_works_label')}
                     />
-                    <Button className="btn btn-bg-primary rounded-pill btn-lg" link={redirectUrl}>
+                    <Button className="btn btn-bg-primary rounded-pill btn-lg">
                         Start Your Journey
                     </Button></Col>
             </Row>
@@ -23,8 +20,7 @@ function AnyOneCanCodeSection(props) {
     )
 }
 
-AnyOneCanCodeSection.propTypes = {
-    redirectUrl: PropTypes.string.isRequired
+AnyoneCanCodeSectionWidget.propTypes = {
 }
 
-export default AnyOneCanCodeSection
+export default AnyoneCanCodeSectionWidget;

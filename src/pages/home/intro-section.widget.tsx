@@ -1,7 +1,7 @@
 import { Col, Container, Row, Button } from "react-bootstrap";
 import { useTranslation } from 'react-i18next';
 
-export default function IntroSection() {
+export default function IntroSectionWidget() {
     const { t, i18n } = useTranslation();
     const filePath = "/images/intro-" + i18n.language + ".gif";
     return (

@@ -1,6 +1,6 @@
 import { Col, Row, Container } from "react-bootstrap";
 
-function Widget404() {
+function NotFoundWidget() {
     const filePath = "/images/404.svg";
     return (
         <Container>
@@ -13,4 +13,4 @@ function Widget404() {
     );
 }
 
-export default Widget404
+export default NotFoundWidget

@@ -1,10 +1,8 @@
 import { Container, Row, Button, Col } from "react-bootstrap";
 import { useTranslation } from 'react-i18next';
-import PropTypes from 'prop-types';
 
-function HowItWorksSection(props) {
+function HowItWorksSectionWidget(props: any) {
     const { t, i18n } = useTranslation();
-    const { tryForFreeUrl } = props;
     const filePath = "/images/how-it-work-" + i18n.language + ".gif";
     return (
         <Container>
@@ -15,7 +13,7 @@ function HowItWorksSection(props) {
                         src={filePath}
                         alt={t('pa_how_it_works_label')}
                     />
-                    <Button className="btn btn-bg-primary rounded-pill btn-lg" link={tryForFreeUrl}>
+                    <Button className="btn btn-bg-primary rounded-pill btn-lg">
                         {t('pa_try_free_btn_label')}
                     </Button></Col>
             </Row>
@@ -23,8 +21,7 @@ function HowItWorksSection(props) {
     );
 }
 
-HowItWorksSection.propTypes = {
-    tryForFreeUrl: PropTypes.string.isRequired
+HowItWorksSectionWidget.propTypes = {
 }
 
-export default HowItWorksSection;
+export default HowItWorksSectionWidget;

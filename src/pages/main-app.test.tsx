@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import PolyWeb from './polyweb';
+import MainApp from './main-app';
 
 test('renders learn react link', () => {
-  render(<PolyWeb />);
+  render(<MainApp />);
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });

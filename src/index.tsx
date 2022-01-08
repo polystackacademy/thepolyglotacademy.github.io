@@ -1,20 +1,22 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
-import reportWebVitals from './reportWebVitals';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './shared/polyweb.css';
-import PolyWeb from './pages/polyweb';
-import './i18n';
 import { IntlProvider } from 'react-intl';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './shared/app.css';
+import './i18n';
+import reportWebVitals from './reportWebVitals';
+import AppRoutes from './app-routes';
+
+const routes = AppRoutes();
 
 ReactDOM.render(
   <React.StrictMode>
     <Suspense fallback="">
       <IntlProvider locale={navigator.language}>
-        <PolyWeb />
+        {routes}
       </IntlProvider>
     </Suspense>
-  </React.StrictMode>,
+  </React.StrictMode >,
   document.getElementById('root')
 );
 

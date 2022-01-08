@@ -3,13 +3,13 @@ import PropTypes from 'prop-types'
 import { Col, Container, Row, Carousel } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
-function TestimonySection(props) {
+function TestimonySectionWidget(props: any) {
     const { testimonies } = props;
     const { t } = useTranslation();
     console.log(testimonies);
     const [index, setIndex] = useState(0);
 
-    const handleSelect = (selectedIndex) => {
+    const handleSelect = (selectedIndex: number) => {
         setIndex(selectedIndex);
     };
     return (
@@ -20,9 +20,9 @@ function TestimonySection(props) {
                 </Row>
                 <Row>
                     <Col>
-                        <Carousel activeIndex={index} onSelect={handleSelect} controls="false">
+                        <Carousel activeIndex={index} onSelect={handleSelect} controls={false}>
                             {
-                                testimonies.map((v, idx) => {
+                                testimonies.map((v: any, idx: number) => {
                                     return (
                                         <Carousel.Item key={idx}>
                                             <div className="row g-0 bg-light position-relative">
@@ -52,8 +52,8 @@ function TestimonySection(props) {
     )
 }
 
-TestimonySection.propTypes = {
+TestimonySectionWidget.propTypes = {
     testimonies: PropTypes.array.isRequired
 }
 
-export default TestimonySection;
+export default TestimonySectionWidget;

@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types'
 import { Col, Container, Row } from 'react-bootstrap';
-import { PaLanguageSupport } from '../../shared/constants';
 import { useTranslation } from 'react-i18next';
+import { LanguageProvider, PaLanguageSupport } from '../../shared/services/language-provider';
 
 const JobRoles = ["Software Developer", "Quality Analyst", "Software Architect", "Business Analyst"];
 const CompanyDetails = ["About Us", "Poly Enterprise", "Contact", "Careers", "Reviews", "Blogs", "Affiliate", "Help & Support", "Terms Of Use", "FAQ", "Privacy"];
 const Products = ["Discord Community", "Poly Community", "PaServe-Appliance Controller"];
 
-function AppFooterSection(props) {
+function WebFooterSectionWidget(props: any) {
     let { jobRoles } = props;
     const { i18n } = useTranslation();
     jobRoles = JobRoles;
@@ -19,7 +19,7 @@ function AppFooterSection(props) {
                         <h5>Skills</h5>
                         <Row className="ms-0">
                             {
-                                jobRoles.map((val, idx) => {
+                                jobRoles.map((val: any, idx: number) => {
                                     return (
                                         <Col key={idx} md={5} className="p-0 pt-2">
                                             <a href='#'>
@@ -69,7 +69,7 @@ function AppFooterSection(props) {
                                     return (
                                         <Col key={idx} md={1}>
                                             <button className={val === i18n.language ? "btn btn-link p-0 active" : "btn btn-link p-0"} onClick={() => i18n.changeLanguage(val)}>
-                                                <small>{PaLanguageSupport[val].langKey}</small>
+                                                <small>{LanguageProvider(val).langKey}</small>
                                             </button>
                                         </Col>
                                     );
@@ -91,8 +91,8 @@ function AppFooterSection(props) {
     )
 }
 
-AppFooterSection.propTypes = {
-    jobRoles: PropTypes.array.isRequired
+WebFooterSectionWidget.propTypes = {
+    jobRoles: PropTypes.array
 }
 
-export default AppFooterSection
+export default WebFooterSectionWidget

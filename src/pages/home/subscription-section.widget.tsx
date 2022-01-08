@@ -1,8 +1,7 @@
-import React from 'react'
 import PropTypes from 'prop-types'
 import { Container, Row, Col, Button } from 'react-bootstrap';
 
-function SubscriptionSection(props) {
+function SubscriptionSectionWidget(props: any) {
     const { membershipPlan } = props;
     const backgroundWatermarkPath = './images/subc-back-watermark.png';
     const pwLogo = './images/logo_pw.png';
@@ -47,8 +46,8 @@ function SubscriptionSection(props) {
     )
 }
 
-SubscriptionSection.propTypes = {
-    membershipPlan: PropTypes.object.isRequired
+SubscriptionSectionWidget.propTypes = {
+    membershipPlan: PropTypes.object
 }
 
-export default SubscriptionSection
+export default SubscriptionSectionWidget

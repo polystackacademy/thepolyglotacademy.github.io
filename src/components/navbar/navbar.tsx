@@ -1,9 +1,9 @@
 import { Container, Navbar, NavDropdown, NavLink, OverlayTrigger, Popover } from "react-bootstrap";
-import "./navbar/navbar.css";
+import "./navbar.css";
 import Button from "@restart/ui/esm/Button";
-import CoursesNavbar from "./navbar/courses-navbar";
 import { useTranslation } from 'react-i18next';
-import { PaLanguageSupport } from '../shared/constants';
+import CoursesNavbar from "./courses-navbar";
+import { LanguageProvider, PaLanguageSupport } from "../../shared/services/language-provider";
 
 function AppNavbar() {
     const { t, i18n } = useTranslation();
@@ -22,10 +22,10 @@ function AppNavbar() {
                     </Navbar.Brand>
                     <div className="vr"></div>
                     <Button className="btn btn-primary rounded-pill">{t('pa_enterprise_btn_label')}</Button>
-                    <NavDropdown className="app-navbar-lang-dropdown" title={PaLanguageSupport[i18n.language]?.langKey}>
+                    <NavDropdown className="app-navbar-lang-dropdown" title={LanguageProvider(i18n.language)?.langKey}>
                         {Object.keys(PaLanguageSupport).map((lng) => (
                             <NavDropdown.Item key={lng} onClick={() => i18n.changeLanguage(lng)}>
-                                {PaLanguageSupport[lng].langKey}</NavDropdown.Item>
+                                {LanguageProvider(lng).langKey}</NavDropdown.Item>
                         ))}
                     </NavDropdown>
                 </div>

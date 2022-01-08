@@ -6,7 +6,7 @@ import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import Button from "@restart/ui/esm/Button";
 import { FormattedNumber, FormattedPlural } from "react-intl";
 
-function CoursesSection(props) {
+function PopularCoursesSectionWidget(props: any) {
     const { courses } = props;
     console.log(courses);
     return (
@@ -19,13 +19,13 @@ function CoursesSection(props) {
                     <Container fluid>
                         <Row>
                             {
-                                courses.map((v, i) => {
+                                courses.map((v: any, i: number) => {
                                     return (
                                         <Col key={i} xs={12} md={4} sm={2}>
                                             <div className="p-md-5">
                                                 <Card style={{ maxWidth: '16rem', left: '50%', transform: 'translateX(-50%)' }}>
                                                     <div className="course-image">
-                                                        <Card.Img variant="left" src={v.imageUrl} />
+                                                        <Card.Img variant="top" src={v.imageUrl} />
                                                         {
                                                             v.reviewAvg >= 4 ?
                                                                 <div className="course-watermarks most-rated-title">
@@ -107,8 +107,8 @@ function CoursesSection(props) {
     )
 }
 
-CoursesSection.propTypes = {
+PopularCoursesSectionWidget.propTypes = {
     courses: PropTypes.array.isRequired,
 }
 
-export default CoursesSection;
+export default PopularCoursesSectionWidget;

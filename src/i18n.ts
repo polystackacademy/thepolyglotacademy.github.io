@@ -1,6 +1,8 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
+import englishTranslations from './dist/translation_en.json';
+import hindiTranslations from './dist/translation_hi.json';
 
 i18n
   // detect user language
@@ -19,11 +21,11 @@ i18n
     resources: {
       en: {
         // eslint-disable-next-line no-undef
-        translations: require('./dist/translation_en.json')
+        translations: englishTranslations
       },
       hi: {
         // eslint-disable-next-line no-undef
-        translations: require('./dist/translation_hi.json')
+        translations: hindiTranslations
       }
     },
     ns: ['translations'],
