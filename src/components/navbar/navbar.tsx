@@ -45,7 +45,7 @@ function AppNavbar() {
                         <NavLink>{t('pa_browse_courses_label')}</NavLink>
                     </OverlayTrigger>
                     <Button className="btn btn-primary rounded-pill me-2">{t('pa_try_3Month_btn_label')}</Button>
-                    <NavLink>{t('pa_login_btn_label')}</NavLink>
+                    <NavLink href="\login">{t('pa_login_btn_label')}</NavLink>
                 </div>
             </Container>
         </Navbar>

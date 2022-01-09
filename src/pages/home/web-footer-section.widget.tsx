@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import { Col, Container, Row } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
+import CopyrightWidget from '../../components/copyright.widget';
 import { LanguageProvider, PaLanguageSupport } from '../../shared/services/language-provider';
 
 const JobRoles = ["Software Developer", "Quality Analyst", "Software Architect", "Business Analyst"];
@@ -81,9 +82,7 @@ function WebFooterSectionWidget(props: any) {
                 <hr />
                 <Row>
                     <Col md={12} className='text-end'>
-                        <small>
-                            @Copyrights - The Polyglot Academy Pvt. Ltd.
-                        </small>
+                        <CopyrightWidget />
                     </Col>
                 </Row>
             </Container>

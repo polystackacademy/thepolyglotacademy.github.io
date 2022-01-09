@@ -6,6 +6,8 @@ import './shared/app.css';
 import './i18n';
 import reportWebVitals from './reportWebVitals';
 import AppRoutes from './app-routes';
+import { CssBaseline, ThemeProvider } from '@mui/material';
+import theme from './theme';
 
 const routes = AppRoutes();
 
@@ -13,7 +15,10 @@ ReactDOM.render(
   <React.StrictMode>
     <Suspense fallback="">
       <IntlProvider locale={navigator.language}>
-        {routes}
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          {routes}
+        </ThemeProvider>
       </IntlProvider>
     </Suspense>
   </React.StrictMode >,

@@ -9,7 +9,7 @@ import SubscriptionSectionWidget from './home/subscription-section.widget';
 import TestimonySectionWidget from './home/testimony-section.widget';
 import WebFooterSectionWidget from './home/web-footer-section.widget';
 
-function MainApp() {
+function Website() {
   return (
     <>
       <AppNavbar />
@@ -24,4 +24,4 @@ function MainApp() {
   );
 }
 
-export default MainApp;
+export default Website;
