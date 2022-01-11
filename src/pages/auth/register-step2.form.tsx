@@ -6,16 +6,20 @@ function RegisterStep2Form(props: any) {
     const { nextStep, previousStep } = props;
     return (
         <React.Fragment>
-            <TextField
-                margin="normal"
-                required
-                fullWidth
-                id="phone-number"
-                label="Phone Number"
-                name="phone-number"
-                autoComplete="phone-number"
-                autoFocus
-            />
+            <Box sx={{
+                my: 4,
+            }}>
+                <TextField
+                    margin="normal"
+                    required
+                    fullWidth
+                    id="otp"
+                    label="Please enter OTP."
+                    name="otp"
+                    autoComplete="otp"
+                    autoFocus
+                />
+            </Box>
             <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)' }}>
                 <Button
                     variant="text"

@@ -34,7 +34,7 @@ function LoginPage(props: any) {
                     item
                     xs={false}
                     sm={4}
-                    md={7}
+                    md={8}
                     sx={{
                         backgroundImage: 'url(https://source.unsplash.com/random)',
                         backgroundRepeat: 'no-repeat',
@@ -44,7 +44,7 @@ function LoginPage(props: any) {
                         backgroundPosition: 'center',
                     }}
                 />
-                <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+                <Grid item xs={12} sm={8} md={4} component={Paper} elevation={6} square>
                     <Box
                         sx={{
                             mx: 4,
@@ -59,8 +59,9 @@ function LoginPage(props: any) {
                     </Box>
                     <Box
                         sx={{
-                            my: 8,
+                            my:  8,
                             mx: 4,
+                            px:10,
                             display: 'flex',
                             flexDirection: 'column',
                             alignItems: 'center',

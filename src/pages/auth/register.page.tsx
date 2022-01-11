@@ -3,18 +3,22 @@ import { ThemeProvider } from '@mui/system';
 import Paper from '@mui/material/Paper';
 import { Avatar, Box, Button, Checkbox, CssBaseline, FormControlLabel, Grid, IconButton, Link, Step, StepLabel, Stepper, TextField, Typography } from '@mui/material';
 import theme from '../../theme';
-import { faIdBadge, faTimes } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useNavigate } from 'react-router-dom';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import CopyrightWidget from '../../components/copyright.widget';
 import RegisterStep1Form from "./register-step1.form";
 import RegisterStep2Form from "./register-step2.form";
 import RegisterStep3Form from "./register-step3.form";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function RegisterPage() {
     const [activeStep, setActiveStep] = React.useState(0);
     const navigator = useNavigate();
     const steps = ["Enter mobile number", "Confirm OTP", "Payment Details"];
+
+    const handleClose = () => {
+        navigator("/", { replace: true });
+    }
 
     const setActiveView = (step: number) => {
         switch (step) {
@@ -40,7 +44,7 @@ function RegisterPage() {
                     item
                     xs={false}
                     sm={4}
-                    md={7}
+                    md={8}
                     sx={{
                         backgroundImage: 'url(https://source.unsplash.com/random)',
                         backgroundRepeat: 'no-repeat',
@@ -50,10 +54,43 @@ function RegisterPage() {
                         backgroundPosition: 'center',
                     }}
                 />
-                <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+                <Grid item xs={12} sm={8} md={4} component={Paper} elevation={6} square>
                     <Box
                         sx={{
-                            my: 8,
+                            mx: 4,
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'end',
+                        }}
+                    >
+                        <IconButton aria-label="delete" edge="end" onClick={() => handleClose()}>
+                            <FontAwesomeIcon icon={faTimes} size="sm" />
+                        </IconButton>
+                    </Box>
+                    <Box
+                        sx={{
+                            mt: 8,
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'center',
+                        }}
+                    >
+                        <Typography variant="h6" color="text.secondary" align="center">
+                            Already have account?
+                        </Typography>
+                        <Button
+                            color="primary"
+                            variant="contained"
+                            sx={{ mt: 3, mb: 2 }}
+                            onClick={() => navigator("/login", { replace: true })}
+                        >
+                            Try Signing In
+                        </Button>
+                    </Box>
+                    <Box
+                        sx={{
+                            mt: 4,
+                            mb: 8,
                             mx: 4,
                             display: 'flex',
                             flexDirection: 'column',
