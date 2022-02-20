@@ -24,6 +24,7 @@ function LoginPage(props: any) {
             email: data.get('email'),
             password: data.get('password'),
         });
+        navigator("/dashboard", { replace: true });
     };
 
     return (
