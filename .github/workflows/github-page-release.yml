@@ -4,7 +4,8 @@ run-name: ${{ github.actor }} is learning GitHub Actions
 on:
   release:
     types: [created]
-
+permissions:
+    id-token: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,7 +15,6 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
-
   publish-npm:
     needs: build
     runs-on: ubuntu-latest
