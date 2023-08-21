@@ -1,26 +1,30 @@
-name: github-page-release-workflow
-run-name: ${{ github.actor }} is learning GitHub Actions
+name: Deploy to GitHub Pages
 
 on:
   release:
     types: [created]
-permissions:
-    id-token: write
+
 jobs:
-  build:
+  build-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
         with:
-          node-version: 20
-      - run: npm ci
-  publish-npm:
-    needs: build
-    runs-on: ubuntu-latest
-    name: Deploy to GitHub Pages
-    steps:
-      - uses: actions/deploy-pages@v1
+          node-version: 20  # Change this to your desired Node.js version
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build  # Change this to your build script command
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          token: ${{ github.token }}
-  
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public  # Change this to your build output directory
